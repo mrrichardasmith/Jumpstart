@@ -17,13 +17,6 @@ nav li a  {
   color: #399bd1;
 }
 
-@media (max-width: 576px) {
-  .logo {
-    display: none;
-  }
-
-}
-
 .jumbotron  {
   background-image: url(../images/jumbotron-bike.jpg);
   background-size: cover;
@@ -41,6 +34,10 @@ nav li a  {
 .jumbotron h1  {
   font-size: 7.1rem;
   font-family: "monoton", sans-serif;
+  text-shadow: -1px -1px 0 #000,
+                1px -1px 0 #000,
+               -1px  1px 0 #000,
+                1px  1px 0 #000;
 }
 
 .jumbotron p  {
@@ -80,7 +77,41 @@ nav li a  {
 
 }
 
+.projects  {
+  padding-bottom: 5.85rem;
+}
+
 .trouble  {
+  padding: 5.2rem 0;
   text-align: center;
   background-color: #F3F3F3;
+}
+
+.trouble h2  {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1.4rem;
+}
+
+.trouble p  {
+  width: 42rem;
+  margin: auto;
+  margin-bottom: 1.4rem;
+}
+
+@media (max-width: 576px) {
+  .logo {
+    display: none;
+  }
+  .jumbotron h1  {
+    font-size: 5.7rem;
+    font-family: "monoton", sans-serif;
+    text-shadow: -1px -1px 0 #000,
+                  1px -1px 0 #000,
+                 -1px  1px 0 #000,
+                  1px  1px 0 #000;
+  }
+  .trouble p  {
+    width: 21rem;
+  }
 }
